@@ -9,11 +9,11 @@ const delay = ms => {
   });
 };
 
-const logger = time => console.log(`Resolved after ${time}ms`);
+const loggerFirst = time => console.log(`Resolved after ${time}ms`);
 
-delay(2000).then(logger); // Resolved after 2000ms
-delay(1000).then(logger); // Resolved after 1000ms
-delay(1500).then(logger); // Resolved after 1500ms
+delay(2000).then(loggerFirst); // Resolved after 2000ms
+delay(1000).then(loggerFirst); // Resolved after 1000ms
+delay(1500).then(loggerFirst); // Resolved after 1500ms
 
 // task2
 const users = [
